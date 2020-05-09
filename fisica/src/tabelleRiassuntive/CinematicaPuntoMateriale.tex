@@ -1,43 +1,60 @@
-\documentclass[../../dimostrazioni]{subfiles}
+% !TEX root = ../../fisica.tex
+
+\documentclass[../../fisica]{subfiles}
 
 \begin{document}
 
     \chapter{Cinematica del punto materiale}
 
-        \section*{Moto rettilineo Uniforme}
-        
-            \[    s(t) = s_0 + v_0 t   \]
-            \[    v(t) = v_0     \]
-            \[    a(t) = 0     \]   
-        
-        \section*{Moto rettilineo Uniformemente Accelerato}
-        
-            \[    s(t) = s_0 + v_0 t + 1/2 a t^2   \]
-            \[    v(t) = v_0 + a t     \]
-            \[    a(t) = a     \]
-            \[    v^2 = v_0 + 2a(s - s_0)   \]
-        
-        \section*{Moto armonico}
-        
-            \[    \frac{d^2x}{dt^2} + \frac{k}{m}x = 0   \]
-            \[    x(t) = A \cos(\omega t + \phi)     \]
-            \[    v(t) = -A \omega \sin(\omega t + \phi)     \]
-            \[    a(t) = -A \omega^2 \cos(\omega t + \phi)   \]
-        
-        \section*{Moto Circolare Uniforme}
-        
-            \[    v = \omega r   \] %Vel angolare
-            \[    v = \frac{s}{t}    \] %Vel tangenziale
-            \[    \omega = \frac{2\pi}{T}      \]
-            \[    a_c = \omega^2 r   \]
-            \[    a_c = \frac{v^2}{r}   \]
-        
-        \section*{Altri moti}
-        
-            \[    s(t) = s_0 + \int_{t_0}^{t} v(t) dt  \]
-            \[    v(t) = v_0 + \int_{t_0}^{t} a(t) dt     \]
-            \[    a(t) = a (t)     \]
-        
+        \renewcommand{\arraystretch}{1.7}
 
-        
+        \begin{tabular}{ |l|>{$\displaystyle}l<{$}|}
+            \hline
+            \multicolumn{2}{|c|}{Cinematica} \\
+            \hline\hline
+            \multirow{3}{*}{Moto rettilineo uniforme}
+                & s(t) = s_0 + v_0 t \\
+                \cline{2-2}
+                & v(t) = v_0 \\
+                \cline{2-2}
+                & a(t) = 0 \\
+            \hline
+            \multirow{4}{*}{Moto rettilineo uniformemente accelerato}
+                & s(t) = s_0 + v_0 t + 1/2 a t^2 \\
+                \cline{2-2}
+                & v(t) = v_0 + a t \\
+                \cline{2-2}
+                & a(t) = a \\
+                \cline{2-2}
+                & v^2 = v_0 + 2a(s - s_0) \\
+            \hline
+            \multirow{4}{*}{Moto armonico}
+                & \dv[2]{x}{t} + \frac{k}{m}x = 0 \\
+                \cline{2-2}
+                & x(t) = A \cos\left(\omega t + \phi\right) \\
+                \cline{2-2}
+                & v(t) = -A \omega \sin\left(\omega t + \phi\right) \\
+                \cline{2-2}
+                & a(t) = -A \omega^2 \cos\left(\omega t + \phi\right) \\
+            \hline
+            \multirow{5}{*}{Moto circolare uniforme}
+                & v = \omega r \\
+                \cline{2-2}
+                & v = \frac{s}{t} \\
+                \cline{2-2}
+                & \omega = \frac{2\pi}{T} \\
+                \cline{2-2}
+                & a_c = \omega^2 r \\
+                \cline{2-2}
+                & a_c = \frac{v^2}{r} \\
+            \hline
+            \multirow{3}{*}{Altri moti}
+                & s(t) = s_0 + \int_{t_0}^{t} v(t) dt \\
+                \cline{2-2}
+                & v(t) = v_0 + \int_{t_0}^{t} a(t) dt \\
+                \cline{2-2}
+                & a(t) = a (t) \\
+            \hline
+        \end{tabular}
+
 \end{document}
