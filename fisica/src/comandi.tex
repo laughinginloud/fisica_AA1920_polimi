@@ -1,0 +1,24 @@
+% Imposto la radice del documento, utile per Visual Studio Code ed altri editor
+% !TEX root = ../dimostrazioni.tex
+
+% Comando per l'indentazione degli elementi di un elenco
+\newcommand{\indentitem}{\setlength\itemindent{25pt}}
+
+% Evito che PGF vada in modalità legacy
+\pgfplotsset{compat=1.16}
+
+% Definisco le punte stondate in entrambi i versi [(-) e )-(]
+\pgfarrowsdeclare{(}{)}{}
+{
+  \pgfsetroundcap{}
+  \pgfpathmoveto{\pgfpoint{-1.5pt}{-1.5pt}}
+  \pgfpatharc{90}{270}{-1.5pt}
+  \pgfusepathqstroke{}
+}
+\pgfarrowsdeclare{)}{(}{}
+{
+  \pgfsetroundcap{}
+  \pgfpathmoveto{\pgfpoint{1.5pt}{1.5pt}}
+  \pgfpatharc{90}{270}{1.5pt}
+  \pgfusepathqstroke{}
+}

@@ -1,0 +1,64 @@
+% Imposto la radice del documento, utile per Visual Studio Code ed altri editor
+% !TEX root = ../dimostrazioni.tex
+
+% Costanti
+\newcommand{\autori}{Virginia Longo, Giovanni Manfredi, Mattia Martelli}
+\newcommand{\titolo}{Appunti di Fisica}
+
+% Utilizzo il tipo libro impostato per evitare pagine vuote, utili solo per la stampa
+\documentclass[oneside]{book}
+
+% Imposto lo stile della numerazione della pagina
+\pagestyle{plain}
+
+% Utilizzo il pacchetto per le traduzioni ed imposto la lingua
+\usepackage{polyglossia}
+\setmainlanguage{italian}
+
+% Imposto il margine delle pagine
+\usepackage[margin=1in]{geometry}
+
+% Importo i pacchetti per le immagini con descrizioni, che torneranno utili per le dimostrazioni contenenti disegni
+\usepackage{graphicx,subcaption}
+
+% Importo i pacchetti per disegnare
+\usepackage{tikz,pgfplots}
+
+% Importo i pacchetti per la matematica
+\usepackage{mathtools,amssymb}
+
+% Imposto i collegamenti
+\usepackage{hyperref}
+\hypersetup{
+    unicode=true,
+    bookmarksnumbered=true,
+    bookmarksopen=false,
+    hidelinks,
+    pdftitle={\titolo},
+    pdfauthor={\autori}
+}
+
+% Importo il pacchetto per lo stile degli elenchi
+\usepackage{enumitem}
+
+% Importo il pacchetto per lo stile delle tabelle
+\usepackage{array}
+
+% Importo il pacchetto per le frazioni in diagonale
+\usepackage{xfrac}
+
+% Importo il pacchetto per la personalizzazione del titolo e lo modifico
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\LARGE\bfseries}{Dimostrazione numero \thechapter}{.5em}{\Huge}
+
+% Importo il pacchetto per i sottofile
+\usepackage{subfiles}
+
+% Importo il paccheto per racchiudere il testo in riquadri
+\usepackage{framed}
+
+% Imposto le informazioni presenti sulla copertina
+% Nota: date rimuove la propria spaziatura, dato che non deve essere presente
+\title{\titolo}
+\author{\autori}
+\date{\vspace{-5ex}}

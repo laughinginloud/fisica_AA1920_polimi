@@ -1,0 +1,45 @@
+% Importo la struttura del documento
+\input{src/struttura.tex}
+
+% Importo i comandi personalizzati
+\input{src/comandi.tex}
+
+\begin{document}
+
+    % Creo la copertina
+    \maketitle
+
+    % Creo l'indice
+    \tableofcontents
+
+    % Imposto lo stile interno delle ancore
+    \renewcommand*{\theHchapter}{ch.\the\value{chapter}}
+
+    \cleardoublepage{}
+    \phantomsection{}
+    \addcontentsline{toc}{part}{Parte I}
+    \part*{Parte I}
+
+        % TODO
+
+    \cleardoublepage{}
+    \phantomsection{}
+    \addcontentsline{toc}{part}{Parte II}
+    \part*{Parte II}
+
+        % TODO
+
+    \cleardoublepage{}
+    \phantomsection{}
+    \addcontentsline{toc}{part}{Tabelle riassuntive}
+    \part*{Tabelle riassuntive}
+
+        % Reinizializzo il contatore del capitolo, cambio lo stile della numerazione, modifico lo stile interno delle ancore
+        \setcounter{chapter}{0}
+        \renewcommand\thechapter{A\arabic{chapter}}
+        \titleformat{\chapter}[display]{\normalfont\LARGE\bfseries}{Tabella riassuntiva numero \arabic{chapter}}{.5em}{\Huge}
+        \renewcommand*{\theHchapter}{tbr.\the\value{chapter}}
+
+            % TODO
+    
+\end{document}
