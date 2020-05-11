@@ -1,0 +1,58 @@
+% !TEX root = ../../fisica.tex
+
+\documentclass[../../fisica]{subfiles}
+
+\begin{document}
+
+    \chapter{Statica e dinamica del corpo rigido}
+
+        \renewcommand{\arraystretch}{1.7}
+
+        \begin{tabular}{ |l|>{$\displaystyle}l<{$}|}
+            \hline
+            \multicolumn{2}{|c|}{Densità} \\
+            \hline\hline
+            \multirow{1}{*}{Densità di un corpo rigido omogeneo}
+                & p = \frac{M}{V} \\
+            \hline
+            \multirow{1}{*}{Densità superficiale}
+                & p_s = \frac{M}{S} \\
+            \hline
+            \multirow{1}{*}{Densità lineare}
+                & p_l = \frac{M}{L} \\
+            \hline
+            \multicolumn{2}{|c|}{Centro di massa e Momento} \\
+            \hline\hline
+            \multirow{1}{*}{Centro di massa}
+                & \vec{r}_{CM} = \frac{1}{M} \int_{V} \vec{r}\rho dv \\ 
+            \hline
+            \multirow{2}{*}{Momento di una forza (momento torcente)}
+                &  \vec{M} = \vec{r} \times \vec{F} \\
+                \cline{2-2}
+                &  M = r F \sin(\theta) \\
+            \hline
+            \multirow{1}{*}{Momento della forza peso}
+                &  \vec{M} = \vec{r}_{CM} \times \vec{F}_{g} \\
+            \hline
+            \multicolumn{2}{|c|}{Momento di Inerzia} \\
+            \hline\hline
+            \multirow{1}{*}{Formula} % Questo è più che altro un placeholder perché non sapevo cosa mettere
+                & I = \int_{V} r^2 dm \\
+            \hline
+            \multirow{1}{*}{Teorema di Huygens-Steiner}
+                & I = I_{CM} + M d^2 \\
+            \hline
+            \multicolumn{2}{|c|}{Energia Cinetica} \\
+            \hline\hline
+            \multirow{1}{*}{Moto rotazionale puro}
+                & K = \frac{1}{2} I \omega^2 \\
+            \hline
+            \multirow{1}{*}{Moto traslatiorio puro}
+                & K = \frac{1}{2} m v^2 \\
+            \hline
+            \multirow{1}{*}{Moto rototraslatiorio}
+                & K = \frac{1}{2} m v^2 + \frac{1}{2} I \omega^2 \\
+            \hline
+        \end{tabular}
+
+\end{document}
