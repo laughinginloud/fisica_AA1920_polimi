@@ -6,28 +6,72 @@
 
     \chapter{Lavoro ed Energia}
 
-        \section*{Lavoro}
-        
-            \[ L = \vec{F} \vec{s}  \] % Lavoro con forza costante in una dimensione 
-            \[ L = \int_A^B\vec{F} \, d\vec{r}  \] % Lavoro in generale
-            \[ L_{p} = -mg(y_f - y_i)  \] % Lavoro forza peso
-            \[ L_{el} = - \frac{1}{2} k (x_f^2 - x_i^2)  \] % Lavoro forza elastica (x_i = s_i - s_0 ; x_f = s_f - s_0) s_0 posizione di equilibrio; s_i posizione iniziale; s_f posizione finale
-           
-        \section*{Energia}
+    % Ho lasciato la versione originale per poter recuperare più facilmente i commenti
 
-            \[ K = \frac{1}{2} m v^2  \] % Enegia cinetica
-            \[ L = K_f - K_i  = \frac{1}{2} m v_f^2 - \frac{1}{2} m v_i^2 \] % Teorema Energia Cinetica
-            \[ \Delta U = - L \] % Energia Potenziale (solo forze conservative)
-            \[ U_g = m g h \] % Energia potenziale gravitazionale bisogna decidere se tenere il pedice p (forza peso) o g e in caso mettere quello della forza peso uguale
-            \[ U_{el} = \frac{1}{2} k x^2 \] % Energia potenziale elastica
-            \[ E = K + U \] % Enegia meccanica. Bisogna decidere se tenere solo E oppure E_M
-            \[ E_i = E_f \] % Principio Conservazione Energia Meccanica assenza di forze non conservative
+%        \section*{Lavoro}
+%        
+%            \[ L = \vec{F} \vec{s}  \] % Lavoro con forza costante in una dimensione 
+%            \[ L = \int_A^B\vec{F} \, d\vec{r}  \] % Lavoro in generale
+%            \[ L_{p} = -mg(y_f - y_i)  \] % Lavoro forza peso
+%            \[ L_{el} = - \frac{1}{2} k (x_f^2 - x_i^2)  \] % Lavoro forza elastica (x_i = s_i - s_0 ; x_f = s_f - s_0) s_0 posizione di equilibrio; s_i posizione iniziale; s_f posizione finale
+%           
+%        \section*{Energia}
+%
+%            \[ K = \frac{1}{2} m v^2  \] % Enegia cinetica
+%            \[ L = K_f - K_i  = \frac{1}{2} m v_f^2 - \frac{1}{2} m v_i^2 \] % Teorema Energia Cinetica
+%            \[ \Delta U = - L \] % Energia Potenziale (solo forze conservative)
+%            \[ U_g = m g h \] % Energia potenziale gravitazionale bisogna decidere se tenere il pedice p (forza peso) o g e in caso mettere quello della forza peso uguale
+%            \[ U_{el} = \frac{1}{2} k x^2 \] % Energia potenziale elastica
+%            \[ E = K + U \] % Enegia meccanica. Bisogna decidere se tenere solo E oppure E_M
+%            \[ E_i = E_f \] % Principio Conservazione Energia Meccanica assenza di forze non conservative
+%
+%        \section*{Potenza e quantità di moto}
+%
+%            \[ P = \frac{L}{t} \] % Potenza
+%            \[ P = \vec{F} \vec{v} \] % Potenza con forza costante
+%            \[ \vec{p} = m\vec{v} \] % Quantità di moto
+%            \[ \vec{F}_{RIS} = \dv{\vec{p}}{t}\] % II PDN
 
-        \section*{Potenza e quantità di moto}
+        \renewcommand{\arraystretch}{1.5}
 
-            \[ P = \frac{L}{t} \] % Potenza
-            \[ P = \vec{F} \vec{v} \] % Potenza con forza costante
-            \[ \vec{p} = m\vec{v} \] % Quantità di moto
-            \[ \vec{F}_{RIS} = \dv{\vec{p}}{t}\] % II PDN
+        \centering
+        \begin{tabular}{ ||l|>{$}l<{$}|| }
+            \hline
+            \multicolumn{2}{|c|}{Lavoro ed energia} \\
+            \hline\hline
+            \multirow{4}{*}{Lavoro}
+                & L = \vec{F} \vec{s} \\
+                \cline{2-2}
+                & L = \int_A^B\vec{F} \, \dd{\vec{r}} \\
+                \cline{2-2}
+                & L_{p} = -mg(y_f - y_i) \\
+                \cline{2-2}
+                & L_{el} = - \frac{1}{2} k (x_f^2 - x_i^2) \\
+            \hline
+            \multirow{7}{*}{Energia}
+                & K = \frac{1}{2} m v^2 \\
+                \cline{2-2}
+                & L = K_f - K_i  = \frac{1}{2} m v_f^2 - \frac{1}{2} m v_i^2 \\
+                \cline{2-2}
+                & \Delta U = - L \\
+                \cline{2-2}
+                & U_g = m g h \\
+                \cline{2-2}
+                & U_{el} = \frac{1}{2} k x^2 \\
+                \cline{2-2}
+                & E = K + U \\
+                \cline{2-2}
+                & E_i = E_f \\
+            \hline
+            \multirow{4}{*}{Potenza e quantità di moto}
+                & P = \frac{L}{t} \\
+                \cline{2-2}
+                & P = \vec{F} \vec{v} \\
+                \cline{2-2}
+                & \vec{p} = m\vec{v} \\
+                \cline{2-2}
+                & \vec{F}_{RIS} = \dv{\vec{p}}{t} \\
+            \hline
+        \end{tabular}
 
 \end{document}
