@@ -6,12 +6,25 @@
 
     \chapter{Dinamica del punto materiale}
 
-        \section*{Forze}
-        
-            \[ \vec{F} = m \vec{a}  \] % II PDN
-            \[ \vec{F}_{att} \leq \mu \vec{F}_{\perp}  \]
-            \[ \vec{F}_{AB} = - \vec{F}_{BA}  \] % III PDN
-            \[ \vec{F}_{g} = m \vec{g}  \] % Ho scritto Fg per forza gravitazionale, l'alternativa è Fp
-            \[ \vec{F}_{el} = - k \Delta x  \]
+        \renewcommand{\arraystretch}{1.5}
+
+        \centering
+        %\begin{tabular}{ ||l|>{$\displaystyle}l<{$}|| }
+        \begin{tabular}{ ||l|>{$}l<{$}|| }
+            \hline
+            \multicolumn{2}{|c|}{Dinamica} \\
+            \hline\hline
+            \multirow{5}{*}{Forze}
+                & \vec{F} = m \vec{a} \\ % II PDN
+                \cline{2-2}
+                & \vec{F}_{att} \leqslant \mu \vec{F}_{\perp} \\ % III PDN
+                \cline{2-2}
+                & \vec{F}_{AB} = - \vec{F}_{BA} \\
+                \cline{2-2}
+                & \vec{F}_{g} = m \vec{g} \\
+                \cline{2-2}
+                & \vec{F}_{el} = - k \Delta x \\
+            \hline
+        \end{tabular}
         
 \end{document}
