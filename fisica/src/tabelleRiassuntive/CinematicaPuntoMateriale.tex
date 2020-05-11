@@ -6,9 +6,12 @@
 
     \chapter{Cinematica del punto materiale}
 
-        \renewcommand{\arraystretch}{1.7}
+        \renewcommand{\arraystretch}{1.5}
+        %\setlength\extrarowheight{5pt}
 
-        \begin{tabular}{ |l|>{$\displaystyle}l<{$}|}
+        \centering
+        %\begin{tabular}{ ||l|>{$\displaystyle}l<{$}|| }
+        \begin{tabular}{ ||l|>{$}l<{$}|| }
             \hline
             \multicolumn{2}{|c|}{Cinematica} \\
             \hline\hline
@@ -20,7 +23,7 @@
                 & a(t) = 0 \\
             \hline
             \multirow{4}{*}{Moto rettilineo uniformemente accelerato}
-                & s(t) = s_0 + v_0 t + 1/2 a t^2 \\
+                & s(t) = s_0 + v_0 t + \frac{1}{2} a t^2 \\
                 \cline{2-2}
                 & v(t) = v_0 + a t \\
                 \cline{2-2}
@@ -49,9 +52,9 @@
                 & a_c = \frac{v^2}{r} \\
             \hline
             \multirow{3}{*}{Altri moti}
-                & s(t) = s_0 + \int_{t_0}^{t} v(t) dt \\
+                & s(t) = s_0 + \int_{t_0}^{t} v(t) \dd{t} \\
                 \cline{2-2}
-                & v(t) = v_0 + \int_{t_0}^{t} a(t) dt \\
+                & v(t) = v_0 + \int_{t_0}^{t} a(t) \dd{t} \\
                 \cline{2-2}
                 & a(t) = a (t) \\
             \hline
